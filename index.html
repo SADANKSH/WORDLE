@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDLE - A Simple Way to Improve</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">WORDLE</div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Levels</a></li>
+                    <li><a href="#" class="nav-link">Login</a></li>
+                    <li><a href="#" class="nav-link">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <h1 class="game-title">Guess the 5-letter word!</h1>
+            
+            <div class="gamescreen">
+            </div>
+            
+            <div class="input-section">
+                <div class="guessbox">
+                    <input type="text" placeholder="Enter Your Guess" id="inbox" maxlength="5">
+                </div>
+                <div class="subbutton">
+                    <button id="sbbtn">Submit</button>
+                </div>
+            </div>
+            
+            <div class="game-info">
+                <p>You have 6 attempts to guess the word.</p>
+                <div class="color-guide">
+                    <div class="guide-item">
+                        <div class="color-box correct"></div>
+                        <span>Correct letter and position</span>
+                    </div>
+                    <div class="guide-item">
+                        <div class="color-box present"></div>
+                        <span>Correct letter, wrong position</span>
+                    </div>
+                    <div class="guide-item">
+                        <div class="color-box absent"></div>
+                        <span>Letter not in word</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
